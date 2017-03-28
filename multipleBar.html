@@ -55,6 +55,57 @@
 
 
 
+
+    
+    // Population 16 + 
+    //            State     Black   Hispanic     `Non-Hispanic white`      Other
+    // 1         Population 0.1364911 0.03542878            0.7911500 0.03693017
+    var dataSet4 = [
+      {legendLabel: "White", magnitude: 0.7911500},
+      {legendLabel: "Black", magnitude: .1364911},
+      {legendLabel: "Hispanic", magnitude: .03542878},
+      {legendLabel: "Other", magnitude: 0.03693017}
+      ];
+
+    // Not in Labor Force 
+    // 3 Not in Labor Force 0.1220940 0.02376676            0.8243993 0.02973996 
+    var dataSet5 = [
+      {legendLabel: "White", magnitude: 0.8243993},
+      {legendLabel: "Black", magnitude: 0.1220940},
+      {legendLabel: "Hispanic", magnitude: 0.02376676},
+      {legendLabel: "Other", magnitude: 0.02973996}
+      ];
+
+    // Unemployed
+    // 2         Unemployed 0.2917105 0.01855898            0.6434140 0.04631653
+    var dataSet6 = [
+      {legendLabel: "White", magnitude: 0.6434140},
+      {legendLabel: "Black", magnitude: 0.2917105},
+      {legendLabel: "Hispanic", magnitude: 0.01855898},
+      {legendLabel: "Other", magnitude: 0.04631653}
+      ];
+
+      //                State       `1`       `2`
+      // *              <chr>     <dbl>     <dbl>
+      // 1         Population 0.4836915 0.5163085
+    var dataSet7 = [
+      {legendLabel: "Male", magnitude: 0.4836915},
+      {legendLabel: "Female", magnitude: 0.5163085}
+      ];
+
+      // 3 Not in Labor Force 0.4184049 0.5815951
+    var dataSet8 = [
+      {legendLabel: "Male", magnitude: 0.4184049},
+      {legendLabel: "Female", magnitude: 0.5815951}
+      ];
+
+      // 2         Unemployed 0.5690971 0.4309029
+    var dataSet9 = [
+      {legendLabel: "Male", magnitude: 0.5690971},
+      {legendLabel: "Female", magnitude: 0.4309029}
+      ];
+
+
       function drawHorizontalBarChart(chartID, dataSet, selectString, colors) {
 
         // chartID => A unique drawing identifier that has no spaces, no "." and no "#" characters.
@@ -436,6 +487,7 @@
           </td>
           <td>
             <div class="div_RootBody">
+            <hr>
               <h1 style="text-align:center; font: bold 1.5em Arial;"> Household Income </h1>
             </div>
             <hr>
@@ -453,7 +505,52 @@
             </div>
           </td>
         </tr>
-        <hr>
+      </table>
+      <table class="table_Body">
+        <tr>
+          <td>
+            <div class="div_RootBody">
+            <hr>
+              <h1 style="text-align:center; font: bold 1.5em Arial;"> Race </h1>
+            </div>
+            <hr>
+            <div class="div_RootBody" id="bar_chart_4">
+              <h3 class="h3_Body"> Population 16 + </h3>
+              <div class="chart"></div>
+            </div>
+            <div class="div_RootBody" id="bar_chart_5">
+              <h3 class="h3_Body"> Not in Labor Force </h3>
+              <div class="chart"></div>
+            </div>
+            <div class="div_RootBody" id="bar_chart_6">
+              <h3 class="h3_Body dataTitle"> Unemployed </h3>
+              <div class="chart"></div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table class="table_Body">
+        <tr>
+          <td>
+            <div class="div_RootBody">
+            <hr>
+              <h1 style="text-align:center; font: bold 1.5em Arial;"> Male/Female </h1>
+            </div>
+            <hr>
+            <div class="div_RootBody" id="bar_chart_7">
+              <h3 class="h3_Body"> Population 16 + </h3>
+              <div class="chart"></div>
+            </div>
+            <div class="div_RootBody" id="bar_chart_8">
+              <h3 class="h3_Body"> Not in Labor Force </h3>
+              <div class="chart"></div>
+            </div>
+            <div class="div_RootBody" id="bar_chart_9">
+              <h3 class="h3_Body dataTitle"> Unemployed </h3>
+              <div class="chart"></div>
+            </div>
+          </td>
+        </tr>
       </table>
 
       <div class="div_Footer"><p><p>Source: PUMS 2015</p></p></div>
@@ -464,6 +561,13 @@
         drawHorizontalBarChart("Bars1", dataSet1, "#bar_chart_1 .chart", "colorScale20c");
         drawHorizontalBarChart("Bars2", dataSet2, "#bar_chart_2 .chart", "colorScale20c");
         drawHorizontalBarChart("Bars3", dataSet3, "#bar_chart_3 .chart", "colorScale20c");
+        drawHorizontalBarChart("Bars4", dataSet4, "#bar_chart_4 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars5", dataSet5, "#bar_chart_5 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars6", dataSet6, "#bar_chart_6 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars7", dataSet7, "#bar_chart_7 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars8", dataSet8, "#bar_chart_8 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars9", dataSet9, "#bar_chart_9 .chart", "colorScale10");
+
       </script>
 
     </body>
