@@ -19,7 +19,6 @@
 
     percentFormat = d3.format(",.1%");
 
-    // Data Used for this example...
     var dataSet1 = [
       {legendLabel: "< $30k", magnitude: .199},
       {legendLabel: "$30k - $60k", magnitude: .256},
@@ -52,9 +51,6 @@
       {legendLabel: "$180k - $210k", magnitude: .009},
       {legendLabel: " > $210", magnitude: .020}
       ];
-
-
-
 
     
     // Population 16 + 
@@ -106,6 +102,115 @@
       ];
 
 
+// Population
+//                State Ambulatory  Cognitive    Hearing `Independent Living` `Multiple disabilities` `Self-Care`      Visual `Without disability`
+// 1         Population 0.03234612 0.01621603 0.02013784          0.005438371              0.08816348 0.001286040 0.008074145            0.8283380
+    var dataSet10 = [
+      {legendLabel: "Without Disability", magnitude: .8283380},
+      {legendLabel: "Multiple Disabilities", magnitude: 0.08816348},
+      {legendLabel: "Ambulatory", magnitude: 0.03234612},
+      {legendLabel: "Hearing", magnitude: 0.02013784},
+      {legendLabel: "Cognitive", magnitude: 0.01621603},
+      {legendLabel: "Visual", magnitude: 0.008074145},
+      {legendLabel: "Independent Living", magnitude: 0.005438371},
+      {legendLabel: "Self-Care", magnitude: 0.001286040}
+      ];
+
+// Not in Labor Force
+//                State Ambulatory  Cognitive    Hearing `Independent Living` `Multiple disabilities` `Self-Care`      Visual `Without disability`
+// 3 Not In Labor Force 0.06390897 0.02912115 0.03190578          0.014212497              0.22167886 0.002031175 0.010577008            0.6265646
+    var dataSet11 = [
+      {legendLabel: "Without Disability", magnitude: 0.6265646},
+      {legendLabel: "Multiple Disabilities", magnitude: 0.22167886},
+      {legendLabel: "Ambulatory", magnitude: 0.06390897},
+      {legendLabel: "Hearing", magnitude: 0.03190578},
+      {legendLabel: "Cognitive", magnitude: 0.02912115},
+      {legendLabel: "Visual", magnitude: 0.010577008},
+      {legendLabel: "Independent Living", magnitude: 0.014212497},
+      {legendLabel: "Self-Care", magnitude: 0.002031175}
+      ];
+
+// Unemployed
+//                State Ambulatory  Cognitive    Hearing `Independent Living` `Multiple disabilities` `Self-Care`      Visual `Without disability`
+// 2         Unemployed 0.01998867 0.05055164 0.01297510          0.003533760              0.05511046 0.000000000 0.000000000            0.8578404
+    var dataSet12 = [
+      {legendLabel: "Without Disability", magnitude: 0.8578404},
+      {legendLabel: "Multiple Disabilities", magnitude: 0.05511046},
+      {legendLabel: "Ambulatory", magnitude: 0.01998867},
+      {legendLabel: "Hearing", magnitude: 0.01297510},
+      {legendLabel: "Cognitive", magnitude: 0.05055164},
+      {legendLabel: "Visual", magnitude: 0},
+      {legendLabel: "Independent Living", magnitude: 0.003533760},
+      {legendLabel: "Self-Care", magnitude: 0}
+      ];
+
+// Population
+    var dataSet13 = [
+      {legendLabel: "< High School", magnitude: 0.1371806},
+      {legendLabel: "High School", magnitude: 0.2966677},
+      {legendLabel: "Some College", magnitude: 0.2304367},
+      {legendLabel: "Associate", magnitude: 0.07581164},
+      {legendLabel: "Bachelor", magnitude: 0.1564297},
+      {legendLabel: "Graduate Degree", magnitude: 0.08243595}
+      ];
+
+// Not in Labor Force
+    var dataSet14 = [
+      {legendLabel: "< High School", magnitude: 0.2614372},
+      {legendLabel: "High School", magnitude: 0.347182},
+      {legendLabel: "Some College", magnitude: 0.1962476},
+      {legendLabel: "Associate", magnitude: 0.04560547},
+      {legendLabel: "Bachelor", magnitude: 0.08071701},
+      {legendLabel: "Graduate Degree", magnitude: 0.05772377}
+      ];
+
+// Unemployed
+    var dataSet15 = [
+      {legendLabel: "< High School", magnitude: 0.1834318},
+      {legendLabel: "High School", magnitude: 0.3950797},
+      {legendLabel: "Some College", magnitude: 0.2313938},
+      {legendLabel: "Associate", magnitude: 0.06271749},
+      {legendLabel: "Bachelor", magnitude: 0.07609722},
+      {legendLabel: "Graduate Degree", magnitude: 0.05028189}
+      ];
+
+// Population
+//                State    ` 55 +` `16 - 21`  `22 - 35`  `36 - 45`  `46 - 54`
+// 1         Population 0.33813239 0.1000341 0.22301667 0.16640363 0.17241324
+    var dataSet16 = [
+      {legendLabel: "16 -21", magnitude: 0.1000341},
+      {legendLabel: "22 - 35", magnitude: 0.22301667},
+      {legendLabel: "36 - 45", magnitude: 0.16640363},
+      {legendLabel: "46 - 54", magnitude: 0.17241324},
+      {legendLabel: "55 +", magnitude: 0.33813239}
+      ];
+
+// Not In Labor Force
+//                State    ` 55 +` `16 - 21`  `22 - 35`  `36 - 45`  `46 - 54`
+// 3 Not in Labor Force 0.59984129 0.1201946 0.09535637 0.08741216 0.09235401
+    var dataSet17 = [
+      {legendLabel: "16 -21", magnitude: 0.1201946},
+      {legendLabel: "22 - 35", magnitude: 0.09535637},
+      {legendLabel: "36 - 45", magnitude: 0.08741216},
+      {legendLabel: "46 - 54", magnitude: 0.09235401},
+      {legendLabel: "55 +", magnitude: 0.59984129}
+      ];
+
+// Unemployed
+//                State    ` 55 +` `16 - 21`  `22 - 35`  `36 - 45`  `46 - 54`
+// 2         Unemployed 0.08273313 0.2034744 0.35396941 0.19584041 0.16398263
+    var dataSet18 = [
+      {legendLabel: "16 -21", magnitude: 0.2034744},
+      {legendLabel: "22 - 35", magnitude: 0.35396941},
+      {legendLabel: "36 - 45", magnitude: 0.19584041},
+      {legendLabel: "46 - 54", magnitude: 0.16398263},
+      {legendLabel: "55 +", magnitude: 0.08273313}
+      ];
+
+
+
+
+
       function drawHorizontalBarChart(chartID, dataSet, selectString, colors) {
 
         // chartID => A unique drawing identifier that has no spaces, no "." and no "#" characters.
@@ -119,14 +224,14 @@
         //           => "colorScale20c"
 
         var canvasWidth = 900;
-        var barsWidthTotal = 900;
+        var barsWidthTotal = 800;
         var barHeight = 20;
         var barsHeightTotal = barHeight * dataSet.length;
         //var canvasHeight = 200;
         var canvasHeight = dataSet.length * barHeight + 10; // +10 puts a little space at bottom.
         var legendOffset = barHeight/2;
         var legendBulletOffset = 30;
-        var legendTextOffset = 95;
+        var legendTextOffset = 120;
 
         var x = d3.scale.linear().domain([0, 1]).rangeRound([0, barsWidthTotal]);
         var y = d3.scale.linear().domain([0, dataSet.length]).range([0, barsHeightTotal]);
@@ -204,7 +309,7 @@
             // at end of bars.  May have to address this better, possibly by placing the
             // magnitude within the bars.
             //.attr("x", function(d) { return barsWidthTotal - x(d.magnitude) + 15; }) // Left to right
-            .attr("x", 100) // Right to left
+            .attr("x", 122) // Right to left
             .attr("y", function(d, i) { return y(i); })
             .attr("height", barHeight)
             .on('mouseover', synchronizedMouseOver)
@@ -230,7 +335,7 @@
           .attr("x", x)      
           .attr("y", function(d, i) { return y(i); })
           //.attr("y", function(d) { return y(d) + y.rangeBand() / 2; })
-          .attr("dx", function(d) { return x(d.magnitude) + 105; })
+          .attr("dx", function(d) { return x(d.magnitude) + 125; })
           .attr("dy", barHeight-5) // vertical-align: middle
           .attr("text-anchor", "center") // text-align: right
           .text(function(d) { return percentFormat(d.magnitude);})
@@ -552,6 +657,75 @@
           </td>
         </tr>
       </table>
+      <table class="table_Body">
+        <tr>
+          <td>
+            <div class="div_RootBody">
+            <hr>
+              <h1 style="text-align:center; font: bold 1.5em Arial;"> Disability </h1>
+            </div>
+            <hr>
+            <div class="div_RootBody" id="bar_chart_10">
+              <h3 class="h3_Body"> Population 16 + </h3>
+              <div class="chart"></div>
+            </div>
+            <div class="div_RootBody" id="bar_chart_11">
+              <h3 class="h3_Body"> Not in Labor Force </h3>
+              <div class="chart"></div>
+            </div>
+            <div class="div_RootBody" id="bar_chart_12">
+              <h3 class="h3_Body dataTitle"> Unemployed </h3>
+              <div class="chart"></div>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table class="table_Body">
+        <tr>
+          <td>
+            <div class="div_RootBody">
+            <hr>
+              <h1 style="text-align:center; font: bold 1.5em Arial;"> Educational Attainment </h1>
+            </div>
+            <hr>
+            <div class="div_RootBody" id="bar_chart_13">
+              <h3 class="h3_Body"> Population 16 + </h3>
+              <div class="chart"></div>
+            </div>
+            <div class="div_RootBody" id="bar_chart_14">
+              <h3 class="h3_Body"> Not in Labor Force </h3>
+              <div class="chart"></div>
+            </div>
+            <div class="div_RootBody" id="bar_chart_15">
+              <h3 class="h3_Body dataTitle"> Unemployed </h3>
+              <div class="chart"></div>
+            </div>
+          </td>
+        </tr>
+      </table>
+            <table class="table_Body">
+        <tr>
+          <td>
+            <div class="div_RootBody">
+            <hr>
+              <h1 style="text-align:center; font: bold 1.5em Arial;"> Age </h1>
+            </div>
+            <hr>
+            <div class="div_RootBody" id="bar_chart_16">
+              <h3 class="h3_Body"> Population 16 + </h3>
+              <div class="chart"></div>
+            </div>
+            <div class="div_RootBody" id="bar_chart_17">
+              <h3 class="h3_Body"> Not in Labor Force </h3>
+              <div class="chart"></div>
+            </div>
+            <div class="div_RootBody" id="bar_chart_18">
+              <h3 class="h3_Body dataTitle"> Unemployed </h3>
+              <div class="chart"></div>
+            </div>
+          </td>
+        </tr>
+      </table>
 
       <div class="div_Footer"><p><p>Source: PUMS 2015</p></p></div>
 
@@ -567,6 +741,15 @@
         drawHorizontalBarChart("Bars7", dataSet7, "#bar_chart_7 .chart", "colorScale10");
         drawHorizontalBarChart("Bars8", dataSet8, "#bar_chart_8 .chart", "colorScale10");
         drawHorizontalBarChart("Bars9", dataSet9, "#bar_chart_9 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars10", dataSet10, "#bar_chart_10 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars11", dataSet11, "#bar_chart_11 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars12", dataSet12, "#bar_chart_12 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars13", dataSet13, "#bar_chart_13 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars14", dataSet14, "#bar_chart_14 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars15", dataSet15, "#bar_chart_15 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars16", dataSet16, "#bar_chart_16 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars17", dataSet17, "#bar_chart_17 .chart", "colorScale10");
+        drawHorizontalBarChart("Bars18", dataSet18, "#bar_chart_18 .chart", "colorScale10");
 
       </script>
 
